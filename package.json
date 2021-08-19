@@ -1,5 +1,5 @@
 {
-  "name": "tedx-agora-test",
+  "name": "eventx-esaas-wlt-stream",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "agora-rtc-react": "git://github.com/AgoraIO-Community/agora-rtc-react#v1.0.1",
+    "agora-rtc-sdk-ng": "^4.6.3",
+    "axios": "^0.21.1",
+    "cookie": "^0.4.1",
+    "date-fns": "^2.23.0",
     "next": "11.1.0",
+    "nookies": "^2.5.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/cookie": "^0.4.1",
     "@types/react": "17.0.18",
-    "eslint": "7.32.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-next": "11.1.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "typescript": "4.3.5"
   }
 }
