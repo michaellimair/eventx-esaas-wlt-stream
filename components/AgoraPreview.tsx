@@ -106,7 +106,7 @@ const AgoraPreview: FC<IAgoraPreviewProps> = ({
           AGC: false,
           ANS: false,
           encoderConfig: {
-            bitrate: 96,
+            bitrate: 64,
             stereo: false,
             sampleRate: 44100,
           },
