@@ -81,7 +81,7 @@ const AgoraPreview: FC<IAgoraPreviewProps> = ({
     // function to initialise the SDK
     const init = async () => {
       client.setClientRole(tokenConfig.role);
-      const webcamToken = tokenConfig.tokens.find((token) => token.tokenType === 'webcam')!;
+      const webcamToken = tokenConfig.agoraRtcTokens.find((token) => token.tokenType === 'webcam')!;
       const {
         agoraAppId,
         agoraChannelName,

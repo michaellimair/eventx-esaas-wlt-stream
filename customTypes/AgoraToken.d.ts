@@ -13,7 +13,6 @@ export interface AgoraTokenWithType extends AgoraToken {
 
 export interface AgoraTokenConfig {
   role: ClientRole;
-  tokens: AgoraTokenWithType[];
-  rtcTokens: AgoraTokenWithType[];
-  rtmToken: AgoraToken;
+  agoraRtcTokens: AgoraTokenWithType[];
+  agoraRtmToken: AgoraToken;
 }

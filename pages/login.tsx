@@ -43,9 +43,6 @@ const LoginPage: NextPage = () => {
         width: '90%', maxWidth: 600, margin: '24px auto 32px', padding: 24,
       }}
       >
-        <Typography component="h1" variant="h4" style={{ textAlign: 'center' }}>
-          Login
-        </Typography>
         <form onSubmit={onFormSubmit}>
           <TextField margin="normal" fullWidth type="email" label="Email" name="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
           <TextField margin="normal" fullWidth type="password" label="Password" name="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
