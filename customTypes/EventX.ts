@@ -76,3 +76,20 @@ export interface EventXWebinarSession {
 export interface EventXWebinarSessionDetail {
   wltSessionId: string;
 }
+
+export enum EventXWebinarSessionStatus {
+  ENDED = 'ended',
+  STARTED = 'started',
+  PAUSED = 'paused',
+  PENDING = 'pending_start',
+}
+
+export interface EventXWebinarSessionMeta {
+  countdownFinishesAt: string;
+  isRecording: boolean;
+  onstageAttendeeId: string;
+  pinnedAttendeeId: string;
+  startedAt: string;
+  status: EventXWebinarSessionStatus;
+  updatedAt: string;
+}

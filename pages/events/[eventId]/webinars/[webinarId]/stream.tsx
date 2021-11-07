@@ -7,6 +7,7 @@ import styles from 'styles/Home.module.css';
 import StickyAppBar from 'components/StickyAppBar';
 import TEDxFooter from 'components/TEDxFooter';
 import BackNavigation from 'components/BackNavigation';
+import SessionManagement from 'components/SessionManagement';
 
 const AgoraPreview = dynamic(() => import('components/AgoraPreview'), { ssr: false });
 
@@ -32,6 +33,7 @@ const Home: NextPage<InferGetServerSidePropsType<typeof getServerSideProps>> = (
           <h1 className={styles.title}>
             Stream Event (WLT)
           </h1>
+          <SessionManagement eventId={eventId as string} webinarId={webinarId as string} />
           <AgoraPreview eventId={eventId as string} webinarId={webinarId as string} />
         </main>
 
